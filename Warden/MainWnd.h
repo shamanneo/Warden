@@ -6,7 +6,7 @@ class CMainWnd : public CWindowImpl<CMainWnd>
         CMainWnd() ; 
         ~CMainWnd() ; 
     public :
-        DECLARE_WND_CLASS(_T("ATLProject"))
+        DECLARE_WND_CLASS(_T("Warden"))
 
         BEGIN_MSG_MAP(CMainWnd)
             MESSAGE_HANDLER(WM_COMMAND, OnCommand) 

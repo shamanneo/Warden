@@ -20,7 +20,7 @@ LRESULT CMainWnd::OnPaint(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL &bHandle
 {
     PAINTSTRUCT ps ; 
     HDC hDC = BeginPaint(&ps) ; 
-
+    // to do...
     EndPaint(&ps) ; 
     return 0 ; 
 }

@@ -18,19 +18,18 @@ int CMainApp::Run(HINSTANCE hInstance, int nCmdShow)
 {
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDI_WARDEN)) ;
     MSG msg ;
-
     m_MainWnd.Create(NULL, NULL, _T("Warden"), WS_OVERLAPPEDWINDOW, 0) ; 
     m_MainWnd.ShowWindow(nCmdShow) ; 
     m_MainWnd.UpdateWindow() ; 
-    while (::GetMessage(&msg, nullptr, 0, 0)) // main message loop.
+    while(::GetMessage(&msg, nullptr, 0, 0)) // main message loop.
     {
-        if (!::TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
+        if(!::TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
         {
             ::TranslateMessage(&msg) ;
             ::DispatchMessage(&msg) ;
         }
     }
-    return (int) msg.wParam ; 
+    return(int)msg.wParam ; 
 }
 
 //      static 

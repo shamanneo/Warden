@@ -148,7 +148,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="atlsupport.h" />
+    <ClInclude Include="MainMenuState.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="LoginState.h" />
     <ClInclude Include="MainApp.h" />
     <ClInclude Include="MainWnd.h" />
     <ClInclude Include="pch.h" />
@@ -157,6 +159,8 @@
     <ClInclude Include="Warden.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MainMenuState.cpp" />
+    <ClCompile Include="LoginState.cpp" />
     <ClCompile Include="MainApp.cpp" />
     <ClCompile Include="MainWnd.cpp" />
     <ClCompile Include="pch.cpp">
